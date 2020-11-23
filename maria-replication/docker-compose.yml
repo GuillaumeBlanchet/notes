@@ -6,7 +6,7 @@ services:
     ports:
       - '3306'
     volumes:
-      - /path/to/mariadb-persistence:/tmp/tcm/mariadb # right side must be a non-root access folder on the host machine
+      - /tmp/mariadb:/bitnami/mariadb # must chmod 777 /tmp/mariadb/ on the folder before
     environment:
       - MARIADB_REPLICATION_MODE=master
       - MARIADB_REPLICATION_USER=repl_user
