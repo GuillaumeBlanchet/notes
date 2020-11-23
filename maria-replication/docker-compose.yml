@@ -28,3 +28,4 @@ services:
       - MARIADB_MASTER_HOST=mariadb-master
       - MARIADB_MASTER_PORT_NUMBER=3306
       - MARIADB_MASTER_ROOT_PASSWORD=master_root_password
+      - MARIADB_EXTRA_FLAGS=--replicate-wild-ignore-table=my_database.ignore%

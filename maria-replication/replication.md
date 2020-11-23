@@ -41,6 +41,10 @@ You should see only test1
 
 [see doc for more tricks](https://mariadb.com/kb/en/replication-filters/)
 
+Or you can set the MARIADB_EXTRA_FLAGS environment variable in the docker-compose file:
+
+    MARIADB_EXTRA_FLAGS='--replicate-wild-ignore-table=my_database.example%'
+
 # Troubleshooting
 
     docker-compose logs -f mariadb-master
