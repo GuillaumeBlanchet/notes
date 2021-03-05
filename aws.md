@@ -16,4 +16,6 @@ To list them inside a file, pipe the previous command in:
 
     aws s3 sync --delete "local-empty-dir/" "s3://my_bucket/path-to-clear"
 
+# Listing a folder:
 
+    aws s3 ls s3://bucket/folder
